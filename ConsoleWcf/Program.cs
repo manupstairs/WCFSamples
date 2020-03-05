@@ -11,10 +11,10 @@ namespace ConsoleWcf
     {
         static void Main(string[] args)
         {
-            var httpUri = new Uri("http://localhost/testcalculator");
+      
             var netTcpUri = new Uri("net.tcp://localhost/testcalculator");
-            var httpsUri = new Uri("https://localhost/testcalculator");
-            ServiceHost selfHost = new ServiceHost(typeof(Calculator), httpUri, netTcpUri,httpsUri);
+     
+            ServiceHost selfHost = new ServiceHost(typeof(Calculator),  netTcpUri);
 
 
 
